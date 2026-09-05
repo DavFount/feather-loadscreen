@@ -1,0 +1,3 @@
+# Put this in the main server.cfg to hide CFX's bottom-right busy spinner.
+# This is a replicated CFX setting and cannot be declared in fxmanifest.lua.
+setr sv_showBusySpinnerOnLoadingScreen false

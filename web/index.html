@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>Feather Framework</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="backdrop is-active" aria-hidden="true">
+        <img class="background-image" src="assets/images/background-gunfighter.webp" alt="">
+    </div>
+    <div class="backdrop" aria-hidden="true">
+        <img class="background-image" src="assets/images/background-gunfighter.webp" alt="">
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="loading-card" aria-labelledby="server-title">
+        <img id="server-logo" class="server-logo" alt="" hidden>
+        <p id="eyebrow" class="eyebrow">Feather Framework</p>
+        <h1 id="server-title">Welcome to the Frontier</h1>
+        <p id="server-subtitle" class="subtitle">Your story is about to begin.</p>
+
+        <section class="progress-section" aria-live="polite">
+            <div class="progress-copy">
+                <span id="status-text" role="status">Connecting to server…</span>
+                <span id="progress-value">0%</span>
+            </div>
+            <div id="progress-track" class="progress-track" role="progressbar"
+                 aria-label="Server loading progress" aria-valuemin="0"
+                 aria-valuemax="100" aria-valuenow="0">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <p id="tip-text" class="tip" hidden></p>
+
+        <footer class="load-footer">
+            <nav id="community-links" class="community-links" aria-label="Community links" hidden>
+                <a id="discord-link" target="_blank" rel="noopener noreferrer" hidden>Discord</a>
+                <a id="website-link" target="_blank" rel="noopener noreferrer" hidden>Website</a>
+            </nav>
+            <span id="build-label" class="build-label" hidden></span>
+        </footer>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
